@@ -1,0 +1,50 @@
+* {
+	font-family: "Rye", cursive;
+	text-align: center;
+	color: #633B2E;
+}
+
+.get-on-moose {
+	background-image: url("../scroll.png");
+	background-size: 350px auto;
+	background-position: center;
+	height: 150px;
+	background-repeat: no-repeat;
+	display:none;
+}
+
+
+#get-on-moose {
+	margin-top: 30px;
+	height: 50px;
+}
+.rant{
+	display:none;
+}
+
+.apology{
+	display:none;
+	font-size: 40px;
+}
+
+.camelot-go {
+	font-size: 50px;
+	padding-top: 50px;
+	display:none;
+}
+
+.rant2 {
+	display:none;
+}
+
+.rant3 {
+	display:none;
+}
+
+.rant4 {
+	display:none;
+}
+
+.get-on-moose-btn {
+	display:none;
+}

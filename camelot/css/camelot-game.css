@@ -1,0 +1,107 @@
+* {
+	font-family: "Rye", cursive;
+	text-align: center;
+	color: #633B2E;
+	font-size: 20px;
+}
+
+
+.intro2 {
+	display: none;
+}
+
+.intro3 {
+	display: none;
+}
+
+.intro4 {
+	display: none;
+}
+
+.help {
+	font-size: 30px;
+	display: none;
+	margin-top: 50px;
+}
+.song	{
+	margin: auto;
+	width:60%;
+	font-family: quill;
+	color: #31302c;
+	padding-top: 175px;
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+.verse1 {
+	text-align: justify;
+	font-size: 35px;
+}
+
+.verse2 {
+	text-align: justify;
+	font-size: 35px;
+}
+
+#song-line1 {
+	width: 200px;
+	height: 40px;
+	background-color: #d9bc96;
+	border: 2px solid #765532;
+}
+
+#song-line2 {
+	width: 200px;
+	height: 40px;
+	background-color: #d9bc96;
+	border: 2px solid #765532;
+}
+
+#song-line3 {
+	width: 200px;
+	height: 40px;
+	background-color: #d9bc96;
+	border: 2px solid #765532;
+}
+
+#song-line4 {
+	width: 200px;
+	height: 40px;
+	background-color: #d9bc96;
+	border: 2px solid #765532;
+}
+#song-line5 {
+	width: 200px;
+	height: 40px;
+	background-color: #d9bc96;
+	border: 2px solid #765532;
+}
+#song-line6 {
+	width: 200px;
+	height: 40px;
+	background-color: #d9bc96;
+	border: 2px solid #765532;
+}
+#song-line7 {
+	width: 200px;
+	height: 40px;
+	background-color: #d9bc96;
+	border: 2px solid #765532;
+}
+
+@font-face {
+    font-family: 'quill';
+    src: url("../fonts/gourhand.ttf");
+}
+.parchment {
+	background-image: url(../parchment-scroll.png);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	height: 1300px;
+}
+
+.intro-text {
+	display: none;
+
+}

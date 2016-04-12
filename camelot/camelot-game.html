@@ -3,43 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/camelot.css">
+	<link rel="stylesheet" href="css/camelot-game.css">
 	<script src="js/jquery-1.12.2.min.js"/></script>
 	<!-- <script src="js/script.js"></script> -->
-	<script src="js/camelot-intro.js"></script>
+	<script src="js/camelot-game.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
 	<title>Camelot</title>
 </head>
 <body>
 	<!-- dat body tho -->
 	<div class="container">
-		<audio autoplay>
-  <source src="camelotTrumpet.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-	</audio>
-	<div class="rant-hide">
-		<h2 class="camelot-intro">You are riding along at a steady gait when you hear the orchestra trumpets heralding the arrival of the scene about Camelot. Everyone stands in awe. "Camelot," King Arthur says with reverence.</h2><br>
-
-		<h2 class="rant">From a distance you can't tell that the castle is only a really shabbily made model that was created with illegal Norwegian Moose labor. My friend Svenge told me that there are lovely lakes in that region. I like to swim, but only with the bitey Norewegan Moose.</h2>
-
-		<form class="get-on-moose">
-			<label for="get-on-moose"></label>
-			<input type="text" id="get-on-moose">
-			<button type="submit" class="btn get-on-moose-btn"></button>
-		</form>
-		<h2 class="rant2">Svenge vis tëking øver to tell avøt Sweden. Wi nøt trei a høliday in Sweden this yër ? See the løveli lakes wiv bitëy møøse. The wøndërful telephøne system. And mäni interesting furry animals. Including the majestik swimming møøse</h2>
-		<h2 class="rant3">A Møøse once bit my sister...No realli! She was Karving her initials øn the møøse with the sharpened end of an interspace tøøthbrush given her by Svenge - her brother-in-law -an Oslo dentist and star of many Norwegian møvies: "The Høt Hands of an Oslo Dentist", "Fillings of Passion", "The Huge Mølars of Horst Nordfink"...</h2>
-		<h2 class="rant4"> Please tell us to get on with it. Swedish accents are hard to write.</h2>
-		<!-- Get on with it Entry?-->
+		<div class="intro-text">
+		<h3 class="intro1">You and the Knights have arrived at Camelot! You have heard of it's splendor and silliness since you were a small lackey. You are not dissapointed.</h3>
+		<h3 class="intro2">You are at the back of the arriving party but even you can't miss frenzy occuring in the throne room. You see some extremly talented singing and tap dancing knights dancing on a rectangle table, but they soon run out of lines to sing. Now they are just silly gits in chainmail standing on a elevated slab of wood. There is a upset rustle coming from the court, and a typical indifferent attitude coming from the servants.</h3>
+		<h3 class="intro3">"Help Me", you hear from behind you. You turn around to find a servant with dirty attire (which seems to be expected from this era in general), with parchment, a quill, and a desperate expression on his face.</h3>
+		<h3 class="intro4">"The court musician quit, and the song needs to be finished.  I can't read, and I'll end up in the stocks for sure.", He says. He looks really pathetic, so you decide to help.</h3>
 	</div>
-		<h1 class="apology">We apologize, the person who wrote the previous paragraphs has been sacked.</h1>
-		<div class="camelot-go">
-			<h2 class="camelot-go">Do you want to go to Camelot?</h2>
-			<button type="button" id="yes-Camelot">Yes</button>
-			<button type="button" id="no-Camelot">No</button>
+		<button type="button" class="help">Help the Pathetic Servant</button>
+		<div class="parchment">
+			<div class="song">
+				<h2 class="verse1">We're knights of the round table<br>We dance whenever we're able<br>We do routines and chorus scenes<br>With footwork <input id="song-line1" type="text"></h2>
+				<h2 class="verse2">We dine well here in Camelot<br>We eat ham and jam and <input id="song-line2" type="text"> </h2>
+				<h2 class="verse1">We're knights of the round table<br>Our shows are <input id="song-line3" type="text"><br>But many times we're given rhymes<br>That are quite unsingable></h2>
+				<h2 class="verse2">We're opera mad in Camelot<br>We sing from the <input id="song-line4" type="text"></h2>
+				<h2 class="verse2">War we're tough and able,<br>Quite <input id="song-line5" type="text"><br>Between our quests we sequin vests<br>And impersonate <input id="song-line6" type="text"></h2>
+				<h2 class="verse2">It's a busy life in Camelot<br>I have to push the <input id="song-line7" type="text"></h2>
+
+
+
+
+
 			</div>
 		</div>
-
 	</div>
+
 </body>
 </html>

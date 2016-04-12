@@ -96,12 +96,39 @@
 }
 .parchment {
 	background-image: url(../parchment-scroll.png);
-	background-size: 90%;
+	background-size: auto 1300px;
 	background-repeat: no-repeat;
 	height: 1300px;
+	display:none;
+}
+input {
+	font-size-adjust: auto;
+	font-size: 25px;
+}
+/*.intro-text {
+	display: none;
+}*/
+
+.win{
+	background-image: url("../shine.png");
+	background-size: cover;
+	background-position: center;
 }
 
-.intro-text {
-	display: none;
+.try{
+	color: #800000;
+}
 
+.button-end {
+	font-family: "Rye", cursive;
+	margin-top: 30px;
+	font-size: 30px;
+	background-color: #d9bc96;
+	border: 2px solid #ffe787;
+	display: none;
+}
+
+.button-end:hover {
+	color: #b27414;
+	cursor: pointer;
 }

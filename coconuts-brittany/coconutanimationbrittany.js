@@ -21,14 +21,14 @@ for (var i = 0; i < gait.length; i++){
     setTimeout(function()
     { $(".recorded").append(coconut2); }, time);
     console.log(time);
-    time += 300;
+    time += 250;
     console.log(time);
   }
   if(gaity[i] === 3){
     setTimeout(function()
     { $(".recorded").append(coconut3); }, time);
     console.log(time);
-    time += 500;
+    time += 400;
     console.log(time);
     }
   }

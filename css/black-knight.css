@@ -1,0 +1,16 @@
+.praiseit {
+	text-align: center;
+	line-height: 6px;
+}
+
+.btn-group-wrapper {
+	text-align: center;
+}
+
+#knight-sprite-test {
+	padding-top: 30px;
+}
+
+#leftArm, #rightArm, #leftLeg, #rightLeg {
+	display: inline;
+}

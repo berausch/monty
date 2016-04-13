@@ -5,7 +5,7 @@
         buffer: {},
         compatibility: {},
         files: [
-            'coconutpop.mp3' = (source src='camelotTrumpet.mp3' type='audio/mpeg'),
+            'coconutpop.mp3'
             'coconut.wav'
         ],
         proceed: true,

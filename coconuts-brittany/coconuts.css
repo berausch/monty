@@ -1,0 +1,49 @@
+.button {
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  height:400px;
+  top:50%;
+  left:50%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+}
+
+* {
+  font-family: "Rye", cursive;
+  text-align: center;
+  color: #633B2E;
+}
+
+.get-on-moose {
+  background-image: url("scroll.png");
+  background-size: 350px auto;
+  background-position: center;
+  height: 150px;
+  background-repeat: no-repeat
+
+}
+
+
+#get-on-moose {
+  margin-top: 70px;
+  height: 50px;
+
+}
+
+
+.get-on-moose-btn {
+  border: solid;
+  border-radius: 15px;
+}

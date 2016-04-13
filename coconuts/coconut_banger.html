@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
 	<link rel="stylesheet" href="coconuts.css">
-	<script src="js/jquery-1.12.2.min.js"/></script>
-	<script src="js/coconut_animation.js"></script>
+	<<script
+		src="https://code.jquery.com/jquery-2.2.3.min.js"
+		integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+		crossorigin="anonymous"></script>
+
+	<script type='text/javascript' src="coconutanimation.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
 
 	<title>Banging Coconuts</title>
@@ -23,16 +28,20 @@
 
 		<h2 class="bang">Around you are A few random objects. You look around and in the corner, half hidden by clothing and a very shiny cup are a couple of coconut halves.</h2>
 
-		<button class="button">
-			<input type="button" value="PLAY"  onclick="play()">
-			<audio id="audio" src="coconut-pop.mp3" type="audio/mpeg"></audio>Bang Coconuts</button>
+			<form>
+<!-- 
+			<button type="submit" id="submit" class="button" name="ticketClassSelector"><em>Bang Coconuts</em></button> -->
+			 <button id="button-loop-1" type="button" value="1">Bang Coconut</button>
+        <button id="button-loop-2" type="button" value="2">Bang 2 Coconuts</button>
+
+			 </form> 
 
 	</div>
 </div>
 <div class="container">
 	<form class="get-on-moose">
 		<label for="get-on-moose"></label>
-	<!-- 	<input type="text" id="get-on-moose"> -->
+		<input type="text" id="get-on-moose">
 		<button type="submit" class="btn get-on-moose-btn">Get On With it!</button>
 	</form>
 </div>

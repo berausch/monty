@@ -10,20 +10,21 @@ var blackKnight = {
 	dismember: function() {
 		console.log("dismembering knight...");
 		// check button presses against list of acceptible answers.
-		var clickString = this.clicks.join("");
-		if (clickString === "attparins" && this.hasOwnProperty("attparins")) {
+		var clickString = this.clicks.join(", ");
+		console.log(clickString);
+		if (clickString === "Attack, Parry, Insult" && this.hasOwnProperty("attparins")) {
 			delete this.attparins;
 			this.stage += 1;
 			console.log("proceed one stage");
-		} else if ( clickString === "insattpar" && this.hasOwnProperty("insattpar")) {
+		} else if ( clickString === "Insult, Attack, Parry" && this.hasOwnProperty("insattpar")) {
 			delete this.insattpar;
 			this.stage += 1;
 			console.log("proceed one stage");
-		} else if ( clickString === "parinsatt" && this.hasOwnProperty("parinsatt")) {
+		} else if ( clickString === "Parry, Insult, Attack" && this.hasOwnProperty("parinsatt")) {
 			delete this.parinsatt;
 			this.stage += 1;
 			console.log("proceed one stage");
-		} else if ( clickString === "parattins" && this.hasOwnProperty("parattins")) {
+		} else if ( clickString === "Parry, Attack, Insult" && this.hasOwnProperty("parattins")) {
 			delete this.parattins;
 			this.stage += 1;
 			console.log("proceed one stage");
@@ -34,53 +35,31 @@ var blackKnight = {
 		// remove response from list so that you can only do each one once.
 		// else, throw the player an insult.
 		this.clicks = [];
+		return clickString;
 	}
 };
 
 // //UI Logic
-// //functions for invisibility. may or may not need in future.
-// $.fn.visible = function() {
-//     return this.css('visibility', 'visible');
-// };
-
-// $.fn.invisible = function() {
-//     return this.css('visibility', 'hidden');
-// };
-// //function for blinking. may or may not be useful for squirting blood effects.
-// $.fn.blink = function(options) {
-// 	var defaults = {delay:500};
-// 	var options = $.extend(defaults, options);
-// 	return this.each(function() {
-// 		var obj = $(this);
-// 		setInterval(function() {
-// 			if ($(obj).css("visibility") == "visible") {
-// 				$(obj).invisible();
-// 			} else {
-// 				$(obj).visible();
-// 			}
-// 		}, options.delay);
-// 	});
-// }
 
 $(document).ready(function() {
 	function proceed () {
 		if (blackKnight.clicks.length === 3) {
-			blackKnight.dismember();
+			$("#combos ul").append("<li>" + blackKnight.dismember() + "</li>");
 			$(".knightStatus").hide();
 			$("#stage" + blackKnight.stage).show();
 		}
 	};
 
 	$("#attack").click(function() {
-		blackKnight.clicks.push("att");
+		blackKnight.clicks.push("Attack");
 		proceed();
 	});
 	$("#parry").click(function() {
-		blackKnight.clicks.push("par");
+		blackKnight.clicks.push("Parry");
 		proceed();
 	});
 	$("#insult").click(function() {
-		blackKnight.clicks.push("ins");
+		blackKnight.clicks.push("Insult");
 		proceed();
 	});
 });

@@ -9,26 +9,36 @@
 	<title>None Shall Pass</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<h1>Fight the Black Knight</h1>
-			<!-- I'm thinking info about the black knight's status can go here. -->
-		<div id="knight-sprite-test">
-			<img id="stage1" class="knightStatus" src="knight_pics/black_knight_t.png" alt="Black Knight">
-			<img id="stage2" class="knightStatus" src="knight_pics/black_knight_1.png" alt="Missing an arm.">
-			<img id="stage3" class="knightStatus" src="knight_pics/black_knight_2.png" alt="Missing both arms.">
-			<img id="stage4" class="knightStatus" src="knight_pics/black_knight_3.png" alt="Missing both arms and a leg.">
-			<img id="stage5" class="knightStatus" src="knight_pics/black_knight_4.png" alt="Black knight's impersonation of a stump.">
-		</div> <!-- end of black knight div -->
-		<div class="btn-group-wrapper">
-			<div id="controls" class="btn-group">
-				<button id="attack" class="action btn btn-default">Attack</button>
-				<button id="parry" class="action btn btn-default">Parry</button>
-				<button id="insult" class="action btn btn-default">Insult</button>
+
+		<div class="row">
+			<div id="react" class="col-xs-3">
+				<ul></ul>
+			</div>
+			<div class="col-xs-6">
+				<!-- I'm thinking info about the black knight's status can go here. -->
+				<div id="knight-sprite">
+					<img id="stage1" class="knightStatus" src="knight_pics/black_knight_t.png" alt="Black Knight">
+					<img id="stage2" class="knightStatus" src="knight_pics/black_knight_1.png" alt="Missing an arm.">
+					<img id="stage3" class="knightStatus" src="knight_pics/black_knight_2.png" alt="Missing both arms.">
+					<img id="stage4" class="knightStatus" src="knight_pics/black_knight_3.png" alt="Missing both arms and a leg.">
+					<img id="stage5" class="knightStatus" src="knight_pics/black_knight_4.png" alt="Black knight's impersonation of a stump.">
+				</div> <!-- end of black knight div -->
+				<div class="btn-group-wrapper">
+					<div id="controls" class="btn-group">
+						<button id="attack" class="action btn btn-default">Attack</button>
+						<button id="parry" class="action btn btn-default">Parry</button>
+						<button id="insult" class="action btn btn-default">Insult</button>
+					</div>
+				</div>
+			</div>
+			<div id= "combos" class="col-xs-3">
+			<h3>Combo:</h3>
+			<ul></ul>
 			</div>
 		</div>
-		<div id="output">
-			<!-- Reactions from the knight -->
-		</div>
+		<!-- end row -->
 	</div>
 </body>
 </html>

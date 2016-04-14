@@ -9,20 +9,10 @@
   border-radius: 15px;
   box-shadow: 0 9px #999;
   height:400px;
-  position:relative;
-  margin:0 auto;
-  width:200px;
   top:50%;
   left:50%;
 }
 
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center; 
-}
 .button:hover {background-color: #3e8e41}
 
 .button:active {
@@ -30,6 +20,7 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 * {
   font-family: "Rye", cursive;
   text-align: center;
@@ -37,46 +28,23 @@
 }
 
 .get-on-moose {
-  background-image: url("../scroll.png");
+  background-image: url("scroll.png");
   background-size: 350px auto;
   background-position: center;
   height: 150px;
-  background-repeat: no-repeat;
-  display:none;
+  background-repeat: no-repeat
+
 }
 
 
 #get-on-moose {
-  margin-top: 30px;
+  margin-top: 70px;
   height: 50px;
-}
-.rant{
-  display:none;
+
 }
 
-.apology{
-  display:none;
-  font-size: 40px;
-}
-
-.camelot-go {
-  font-size: 50px;
-  padding-top: 50px;
-  display:none;
-}
-
-.rant2 {
-  display:none;
-}
-
-.rant3 {
-  display:none;
-}
-
-.rant4 {
-  display:none;
-}
 
 .get-on-moose-btn {
-  display:none;
+  border: solid;
+  border-radius: 15px;
 }

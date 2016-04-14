@@ -13,6 +13,7 @@ $(document).ready(generateInsult);
 	        'You are a golden stream of',
 	        'Propper',
 	        'You come home smelling of',
+	        'You',
 	        ''
 
 	    ];
@@ -38,7 +39,11 @@ $(document).ready(generateInsult);
 	        ' blaspheming',
 	        ' moistened',
 	        ' bloody',
-	        ' '
+	        ' snotty faced heap of',
+	        ' vacuous',
+	        ' great big',
+	        ' daft',
+	        ' stuck up'
 	    ];
 
 	    var Adjective2 = [
@@ -58,6 +63,9 @@ $(document).ready(generateInsult);
 	        ' diseased',
 	        ' silly little',
 	        ' black-hearted',
+	        ' parrot dropping',
+	        ' toffy-nosed',
+	        ' pompous'
 	        ' '
 	    ];
 
@@ -72,7 +80,8 @@ $(document).ready(generateInsult);
 	        ' Kn-ig-hts.',
 	        ' Pet.',
 	        ' Conkface!',
-	        ' bint.'
+	        ' bint.',
+	        ' poohft.'
 	    ];
 
 	    var randomPronoun = Math.floor(Math.random() * Pronoun.length);

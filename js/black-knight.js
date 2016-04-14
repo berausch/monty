@@ -5,7 +5,9 @@ var blackKnight = {
 	clicks: [], attparins: 1, insattpar: 1, parinsatt: 1, parattins: 1, stage: 1,
 
 	insult: function() {
-		console.log("You fight like a dairy farmer");
+		// console.log("You fight like a dairy farmer");
+		var list = ["insult1", "insult2", "insult3", "insult4", "insult5"];
+		console.log(list[Math.floor(Math.random() * 5)]);
 	},
 	dismember: function() {
 		console.log("dismembering knight...");
@@ -29,7 +31,7 @@ var blackKnight = {
 			this.stage += 1;
 			console.log("proceed one stage");
 		} else {
-			this.insult();
+			this.insult(); // change this maybe.
 		}
 		// if it matches one, proceed to next dismemberment stage.
 		// remove response from list so that you can only do each one once.

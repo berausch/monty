@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 // i need pics.
 //     // associate an image and set background color above. 
 //     // this framework will re render the size but ideally it should already be the size you want.
  WebFontConfig = {
+=======
+
+>>>>>>> master
     google: { families: [ 'Rye::latin' ] }
   };
   (function() {
@@ -156,8 +160,12 @@ function startGame() {
     playing = true;
 }
 
+<<<<<<< HEAD
 // this function (needed only on JSFiddle) take care of loading the images from the remote server
 // function handleRemoteImagesOnJSFiddle() {
 // 	game.load.baseURL = 'https://end3r.github.io/Gamedev-Phaser-Content-Kit/demos/';
 // 	game.load.crossOrigin = 'anonymous';
+=======
+
+>>>>>>> master
 

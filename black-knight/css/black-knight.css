@@ -1,0 +1,15 @@
+#knight-sprite {
+	text-align: center;
+}
+
+.btn-group-wrapper {
+	text-align: center;
+}
+
+#knight-sprite-test {
+	padding-top: 30px;
+}
+
+#stage2, #stage3, #stage4, #stage5 {
+	display: none;
+}

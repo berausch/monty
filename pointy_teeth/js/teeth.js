@@ -1,7 +1,21 @@
+<<<<<<< HEAD
 // i need pics.
 //     // associate an image and set background color above. 
 //     // this framework will re render the size but ideally it should already be the size you want.
+ WebFontConfig = {
+=======
 
+>>>>>>> master
+    google: { families: [ 'Rye::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
  
 var game = new Phaser.Game(480, 320, Phaser.AUTO, null, {preload: preload, create: create, update: update});
 
@@ -19,27 +33,28 @@ var playing = false;
 var startButton;
 
 function preload() {
-	// handleRemoteImagesOnJSFiddle();
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
-    game.stage.backgroundColor = '#eee';
+    game.load.image('backdrop', 'img/rabbithole.png');
     game.load.image('paddle', 'img/paddle.png');
     game.load.image('brick', 'img/brick.png');
-    game.load.spritesheet('ball', 'img/wobble.png', 20, 20);
+    game.load.spritesheet('ball', 'img/ball.png');
     game.load.spritesheet('button', 'img/button.png', 120, 40);
+
 }
 function create() {
+    game.add.sprite(0, 0, 'backdrop');
     game.physics.startSystem(Phaser.Physics.ARCADE);
     game.physics.arcade.checkCollision.down = false;
     ball = game.add.sprite(game.world.width*0.5, game.world.height-25, 'ball');
-    ball.animations.add('wobble', [0,1,0,2,0,1,0,2,0], 24);
     ball.anchor.set(0.5);
     game.physics.enable(ball, Phaser.Physics.ARCADE);
     ball.body.collideWorldBounds = true;
     ball.body.bounce.set(1);
     ball.checkWorldBounds = true;
     ball.events.onOutOfBounds.add(ballLeaveScreen, this);
+
 
     paddle = game.add.sprite(game.world.width*0.5, game.world.height-5, 'paddle');
     paddle.anchor.set(0.5,1);
@@ -48,11 +63,21 @@ function create() {
 
     initBricks();
 
-    textStyle = { font: '18px Arial', fill: '#0095DD' };
-    scoreText = game.add.text(5, 5, 'Points: 0', textStyle);
+    textStyle = { font: '18px Rye', fill: '#26004d' };
+    scoreText = game.add.text(5, 5, 'Points: 0', textStyle); 
+        scoreText.stroke = "#e0ccff";
+        scoreText.strokeThickness = 3;
+        scoreText.setShadow(2, 2, "#333333", 2, false, true);
     livesText = game.add.text(game.world.width-5, 5, 'Lives: '+lives, textStyle);
+        livesText.stroke = "#e0ccff";
+        livesText.strokeThickness = 3;
+        livesText.setShadow(2, 2, "#333333", 2, false, true);
     livesText.anchor.set(1,0);
     lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, tap to continue', textStyle);
+        lifeLostText.stroke = "#e0ccff";
+        lifeLostText.strokeThickness = 3;
+    //  Apply the shadow to the Fill only
+        lifeLostText.setShadow(2, 2, "#333333", 2, false, true);
     lifeLostText.anchor.set(0.5);
     lifeLostText.visible = false;
 
@@ -68,17 +93,18 @@ function update() {
 }
 function initBricks() {
     brickInfo = {
-        width: 50,
-        height: 20,
+        width: 40,
+        height: 15,
         count: {
-            row: 7,
-            col: 3
+            row: 8,
+            col: 4
         },
         offset: {
             top: 50,
-            left: 60
+            left: 30,
+            right: 30,
         },
-        padding: 10
+        padding: 20,
     }
     bricks = game.add.group();
     for(c=0; c<brickInfo.count.col; c++) {
@@ -116,11 +142,11 @@ function ballLeaveScreen() {
         paddle.reset(game.world.width*0.5, game.world.height-5);
         game.input.onDown.addOnce(function(){
             lifeLostText.visible = false;
-            ball.body.velocity.set(150, -150);
+            ball.body.velocity.set(170, -170);
         }, this);
     }
     else {
-        alert('You lost, game over!');
+        alert('You have been eaten by the rabbit!');
         location.reload();
     }
 }
@@ -134,8 +160,12 @@ function startGame() {
     playing = true;
 }
 
+<<<<<<< HEAD
 // this function (needed only on JSFiddle) take care of loading the images from the remote server
 // function handleRemoteImagesOnJSFiddle() {
 // 	game.load.baseURL = 'https://end3r.github.io/Gamedev-Phaser-Content-Kit/demos/';
 // 	game.load.crossOrigin = 'anonymous';
-}
+=======
+
+>>>>>>> master
+

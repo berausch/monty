@@ -1,22 +1,16 @@
 // Business Logic
 // <<<<<<< HEAD
 
+var whichShrub = function(){
+    var x = Math.floor((Math.random() * 3) + 1);
+    console.log(x);
+    return x
 
-// // UI Logic
-// =======
-// var whichShrub = function(){
-//     var x = Math.floor((Math.random() * 3) + 1);
-//     console.log(x);
-//     return x
-
-// }
+}
 
 
-// // UI Logic
+// UI Logic
 
-
-
-// >>>>>>> origin/brittany
 $(document).ready(function() {
 
   $(".play").click(function(){

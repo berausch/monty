@@ -1,0 +1,152 @@
+* {
+	font-family: "Rye", cursive;
+	text-align: center;
+	color: #633B2E;
+	font-size: 20px;
+}
+
+img {
+	height: auto;
+	width: 33%;
+	margin-top:20%;
+}
+
+.grail {
+opacity: .8;
+height: auto;
+width: 30%;
+position: fixed;
+left: 35%;
+top: 0;
+z-index: 1;
+margin-top: 8%;
+}
+
+.shrubbery1{
+	position: relative;
+	animation-name: shrub1move;
+	animation-duration: 6s;
+}
+
+.shrubbery3{
+	position: relative;
+	animation-name: shrub3move;
+	animation-duration: 6s;
+}
+
+.shrubbery2{
+	position: relative;
+	animation-name: shrub2move;
+	animation-duration: 6s;
+}
+
+.grail{
+	display: none;
+}
+@keyframes shrub1move {
+		0%   {
+			left: 0px;
+		}
+		10%  {
+			left: -200px;
+			}
+		20%  {
+			left: 400px;
+			}
+		30%  {
+			left: -300px;
+			}
+    40%  {
+			left: 900px;
+			}
+		50%  {
+			left: 400px;
+			}
+		60%  {
+			left: 900px;
+			}
+		70%  {
+			left: 600px;
+			}
+		80%  {
+			left: -400px;
+			}
+		90%  {
+			left: 400px;
+			}
+    100% {
+			left: 0px;
+			}
+}
+
+@keyframes shrub3move {
+	0%   {
+		right: 0px;
+	}
+	10%  {
+		right: 400px;
+		}
+	20%  {
+		right: -300px;
+		}
+	30%  {
+		right: 900px;
+		}
+	40%  {
+		right: -600px;
+		}
+	50%  {
+		right: 800px;
+		}
+	60%  {
+		right: 400px;
+		}
+	70%  {
+		right: -500px;
+		}
+	80%  {
+		right: 800px;
+		}
+	90%  {
+		right: -300px;
+		}
+	100% {
+		right: 0px;
+		}
+}
+
+@keyframes shrub2move {
+	0%   {
+		right: 0px;
+	}
+	10%  {
+		right: -200px;
+		}
+	20%  {
+		right: 500px;
+		}
+	30%  {
+		right: -300px;
+		}
+	40%  {
+		right: 700px;
+		}
+	50%  {
+		right: -200px;
+		}
+	60%  {
+		right: 900px;
+		}
+	70%  {
+		right: 400px;
+		}
+	80%  {
+		right: 900px;
+		}
+	90%  {
+		right: -300px;
+		}
+	100% {
+		right: 0px;
+		}
+}

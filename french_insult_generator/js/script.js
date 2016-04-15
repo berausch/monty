@@ -59,21 +59,14 @@ $(document).ready(generateInsult);
 	        ' thieving',
 	        ' eldeberry, you',
 	        ' jailor',
-<<<<<<< HEAD
-	        ' creul and bad tempered',
-=======
 	        ' cruel and bad tempered',
->>>>>>> origin/brittany
+
 	        ' diseased',
 	        ' silly little',
 	        ' black-hearted',
 	        ' parrot dropping',
 	        ' toffy-nosed',
-<<<<<<< HEAD
-	        ' pompous'
-=======
 	        ' pompous',
->>>>>>> origin/brittany
 	        ' '
 	    ];
 

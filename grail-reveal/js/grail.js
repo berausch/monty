@@ -1,22 +1,22 @@
 // Business Logic
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
 
-// UI Logic
-=======
-var whichShrub = function(){
-    var x = Math.floor((Math.random() * 3) + 1);
-    console.log(x);
-    return x
+// // UI Logic
+// =======
+// var whichShrub = function(){
+//     var x = Math.floor((Math.random() * 3) + 1);
+//     console.log(x);
+//     return x
 
-}
-
-
-// UI Logic
+// }
 
 
+// // UI Logic
 
->>>>>>> origin/brittany
+
+
+// >>>>>>> origin/brittany
 $(document).ready(function() {
 
   $(".play").click(function(){
@@ -31,9 +31,7 @@ $(document).ready(function() {
       $(".shrub2").addClass("shrubbery2"),
       $(".shrub3").addClass("shrubbery3")
      }, 2500);
-<<<<<<< HEAD
 
-=======
      var shrubNumber = whichShrub()
      if(shrubNumber===1){
        $(".shrub1").click(function(){
@@ -95,7 +93,6 @@ $(document).ready(function() {
         }, 2000);
        });
      }
->>>>>>> origin/brittany
 
   });
 });

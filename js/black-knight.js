@@ -7,7 +7,8 @@ var blackKnight = {
 	insult: function() {
 		// console.log("You fight like a dairy farmer");
 		var list = ["insult1", "insult2", "insult3", "insult4", "insult5"];
-		console.log(list[Math.floor(Math.random() * 5)]);
+		// console.log(list[Math.floor(Math.random() * 5)]);
+		return list[Math.floor(Math.random() * 5)];
 	},
 	dismember: function() {
 		console.log("dismembering knight...");
@@ -31,7 +32,7 @@ var blackKnight = {
 			this.stage += 1;
 			console.log("proceed one stage");
 		} else {
-			this.insult(); // change this maybe.
+			// this.insult(); // change this maybe.
 		}
 		// if it matches one, proceed to next dismemberment stage.
 		// remove response from list so that you can only do each one once.
@@ -49,6 +50,7 @@ $(document).ready(function() {
 			$("#combos ul").append("<li>" + blackKnight.dismember() + "</li>");
 			$(".knightStatus").hide();
 			$("#stage" + blackKnight.stage).show();
+			$("#react ul").append("<li>" + blackKnight.insult() + "</li>");
 		}
 	};
 

@@ -8,6 +8,7 @@ var coconut3 = "<audio autoplay><source src='audio/3coconut.m4a' type='audio/mp4
 var coconut1d = "<audio class='coc1'><source src='audio/1-coconut.mp3' type='audio/mpeg'>Your browser does not support the audio element.</audio>"
 var time = 0;
 var recorded = function(gaity){
+  var time = 0;
   for(var ii = 0; ii<3; ii++){
 for (var i = 0; i < gait.length; i++){
   if(gaity[i] === 1){

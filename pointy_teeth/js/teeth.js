@@ -1,6 +1,5 @@
 
     google: { families: [ 'Rye::latin' ] }
-  };
   (function() {
     var wf = document.createElement('script');
     wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
@@ -123,6 +122,8 @@ function ballHitBrick(ball, brick) {
     scoreText.setText('Points: '+score);
     if(score === brickInfo.count.row*brickInfo.count.col*10) {
         alert('You won the game, congratulations!');
+
+        // needs to redirect to new url
         location.reload();
     }
 }

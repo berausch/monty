@@ -41,19 +41,19 @@ margin-top: 8%;
 
 .shrubbery1{
 	position: relative;
-	animation-name: shrub1move;
+	animation-name: shrubymove;
 	animation-duration: 6s;
 }
 
 .shrubbery3{
 	position: relative;
-	animation-name: shrub3move;
+	animation-name: shrubyyymove;
 	animation-duration: 6s;
 }
 
 .shrubbery2{
 	position: relative;
-	animation-name: shrub2move;
+	animation-name: shrubyymove;
 	animation-duration: 6s;
 }
 
@@ -65,7 +65,7 @@ margin-top: 8%;
 .redX{
 	display: none;
 
-@keyframes shrub1move {
+@keyframes shrubymove {
 		0%   {
 			left: 0px;
 		}
@@ -101,7 +101,7 @@ margin-top: 8%;
 			}
 }
 
-@keyframes shrub3move {
+@keyframes shrubyyymove {
 	0%   {
 		right: 0px;
 	}
@@ -137,7 +137,7 @@ margin-top: 8%;
 		}
 }
 
-@keyframes shrub2move {
+@keyframes shrubyymove {
 	0%   {
 		right: 0px;
 	}

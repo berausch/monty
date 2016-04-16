@@ -22,8 +22,6 @@ z-index: 1;
 margin-top: 8%;
 }
 
-<<<<<<< HEAD
-=======
 .redX {
 opacity: .8;
 height: auto;
@@ -40,7 +38,7 @@ margin-top: 8%;
 	margin-top: 100px;
 }
 
->>>>>>> origin/brittany
+
 .shrubbery1{
 	position: relative;
 	animation-name: shrub1move;
@@ -62,13 +60,11 @@ margin-top: 8%;
 .grail{
 	display: none;
 }
-<<<<<<< HEAD
-=======
+
 
 .redX{
 	display: none;
-}
->>>>>>> origin/brittany
+
 @keyframes shrub1move {
 		0%   {
 			left: 0px;

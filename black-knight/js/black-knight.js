@@ -6,7 +6,7 @@ var blackKnight = {
 
 	insult: function() {
 		// console.log("You fight like a dairy farmer");
-		var list = ["insult1", "insult2", "insult3", "insult4", "insult5"];
+		var list = ["It's just a flesh wound.", "Scared I'll beat you, eh?", "You will die.", "You fight like a dairy farmer.", "I'm invincible!"];
 		// console.log(list[Math.floor(Math.random() * 5)]);
 		return list[Math.floor(Math.random() * 5)];
 	},

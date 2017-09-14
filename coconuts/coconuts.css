@@ -31,8 +31,7 @@
   background-size: 350px auto;
   background-position: center;
   height: 150px;
-  background-repeat: no-repeat
-    
+  background-repeat: no-repeat    
 }
 
 .get-on-moose-btn {
@@ -40,3 +39,4 @@
     border-radius: 15px;
     margin-top: 35px;
  }
+

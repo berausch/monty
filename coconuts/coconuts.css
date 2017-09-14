@@ -32,15 +32,15 @@
   background-position: center;
   height: 150px;
   background-repeat: no-repeat
-  
+    
+  .get-on-moose-btn {
+      border: solid;
+      border-radius: 15px;
+      background-position: center;
+   }
     
 }
 
 
 
-.get-on-moose-btn {
-  border: solid;
-  border-radius: 15px;
-  margin-top: 70px;
-  height: 50px;
-}
+

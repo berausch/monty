@@ -22,6 +22,7 @@ z-index: 1;
 margin-top: 8%;
 }
 
+
 .redX {
 opacity: .8;
 height: auto;
@@ -31,6 +32,7 @@ left: 35%;
 top: 0;
 z-index: 1;
 margin-top: 8%;
+display: none;
 }
 
 .grail-button{
@@ -62,10 +64,8 @@ margin-top: 8%;
 }
 
 
-.redX{
-	display: none;
 
-@keyframes shrubymove {
+@keyframes shrub1move {
 		0%   {
 			left: 0px;
 		}
